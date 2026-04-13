@@ -1,0 +1,77 @@
+body, h1, h2, h3, p, ul, li, table {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+@font-face {
+  font-family: 'LatoSubset';
+  src: url('fonts/Lato-Subset.woff2') format('woff2');
+  font-display: swap;
+}
+
+
+section {
+  padding: 40px 20px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.tips {
+  background-color: #fff8f8;
+  line-height: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

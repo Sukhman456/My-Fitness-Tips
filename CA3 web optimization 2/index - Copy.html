@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/extra.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2>My Fitness Tips</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="equipment.html">Equipment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h2>Welcome to My Fitness Tips</h2>
+    <p>Stay fit and healthy</p>
+
+    <!-- Slider -->
+    <img id="slider" src="https://images.unsplash.com/photo-1594737625785-c22c8b0a9b3f?auto=format&fit=crop&w=800&q=80" width="300">
+
+    <!-- Time display -->
+    <p id="time"></p>
+
+  <button onclick="toggleTips()">Show Tips</button>
+
+<p id="tipsText" style="display:none;">
+  ✔ Drink water regularly <br>
+  ✔ Exercise daily <br>
+  ✔ Eat healthy food <br>
+</p>
+  </div>
+</header>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg" width="200">
+    <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" width="200">
+    <img src="https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg" width="200">
+    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" width="200">
+    <img src="https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg" width="200">
+    <img src="https://images.pexels.com/photos/28061/pexels-photo.jpg" width="200">
+  </div>
+</section>
+
+<!-- Scroll to Top -->
+<section>
+  <button class="top-btn" onclick="scrollToTop()">Go to Top</button>
+</section>
+
+<footer>
+  <p>© 2023 My Fitness Tips</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/extra.js"></script>
+
+</body>
+</html>

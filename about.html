@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="Lato-Regular.woff2" 
+      as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="minifiedcss/common.min.css">
+<link rel="stylesheet" href="minifiedcss/about.min.css">
+  <style>
+
+
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h2 {
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+/* HEADER + HERO */
+header {
+  background-color: #3b1919;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+  </style>
+</head>
+
+
+<body>
+
+<nav class="navbar">
+  <h2>My Fitness Tips</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="equipment.html">Equipment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="about">
+  <div class="container">
+    <h2>About Us</h2>
+
+    <p>
+      Welcome to <strong>My Fitness Tips</strong>, your one-stop destination for achieving a healthier and more active lifestyle.
+      Our goal is to guide individuals of all fitness levels by providing easy-to-follow workout routines,
+      practical fitness tips, and useful resources to stay consistent and motivated.
+    </p>
+
+    <p>
+      We believe that fitness is not just about intense workouts, but also about maintaining a balanced lifestyle.
+      From strength training exercises to flexibility routines, we focus on helping you build strength,
+      improve endurance, and enhance overall well-being.
+    </p>
+
+    <p>
+      Whether you are a beginner starting your fitness journey or someone looking to improve your routine,
+      our platform provides the right guidance to help you stay on track and achieve your goals effectively.
+    </p>
+
+    <!-- Images -->
+<img 
+  src="image2/bodybuilding-800.webp"
+  srcset="image2/bodybuilding-400.webp 400w,
+          image2/bodybuilding-800.webp 800w,
+          image2/bodybuilding-1200.webp 1200w"
+  sizes="(max-width: 600px) 100vw, 300px"
+  loading="lazy"
+>
+
+<img 
+  src="image2/image3-800.webp"
+  srcset="image2/image3-400.webp 400w,
+          image2/image3-800.webp 800w,
+          image2/image3-1200.webp 1200w"
+  sizes="(max-width: 600px) 100vw, 300px"
+  loading="lazy"
+>
+  </div>
+</section>
+
+<footer>
+  <p>© 2023 My Fitness Tips</p>
+</footer>
+
+<script src="minifiedjs/script.min.js" defer></script>
+<script src="minifiedjs/extra.min.js" defer></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log('SW Error:', err));
+}
+</script>
+
+</body>
+</html>

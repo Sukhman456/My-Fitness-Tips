@@ -1,0 +1,24 @@
+// Form alert
+function showMessage() {
+  alert("Form submitted!");
+}
+
+// IMAGE SLIDER (FIXED)
+let sliderImages = [
+  "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"
+];
+
+let index = 0;
+
+function changeImage() {
+  let slider = document.getElementById("slider");
+  if (slider) {
+    slider.src = sliderImages[index];
+    index = (index + 1) % sliderImages.length;
+  }
+}
+
+setInterval(changeImage, 2000);
+

@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #3b1919;
+  color: white;
+  padding: 15px;
+}
+
+.navbar h2 {
+  display: inline;
+}
+
+.navbar ul {
+  display: inline;
+  float: right;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

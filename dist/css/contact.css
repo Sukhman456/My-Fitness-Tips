@@ -1,0 +1,1 @@
+form{max-width:400px;margin:20px auto;text-align:center}form input,form textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:5px;font-size:14px}form textarea{height:100px;resize:none}form button{background-color:#ff4d4d;color:#fff;padding:10px 20px;border:none;border-radius:5px;font-size:16px;cursor:pointer}form button:hover{background-color:#c00}

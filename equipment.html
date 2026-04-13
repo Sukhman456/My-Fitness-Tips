@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preload" href="Lato-Regular.woff2" 
+      as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="minifiedcss/common.min.css">
+<link rel="stylesheet" href="minifiedcss/equipment.min.css">
+  <style>
+   
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h2 {
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+/* HEADER + HERO */
+header {
+  background-color: #3b1919;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2>My Fitness Tips</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="equipment.html">Equipment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h2>Fitness Equipment</h2>
+    <p>Tools to improve your workout</p>
+  </div>
+</header>
+
+<section id="equipment">
+  <h2>Fitness Equipment</h2>
+
+  <!-- Extra large image -->
+<img 
+  src="image2/bodybuilding-800.webp"
+  srcset="image2/bodybuilding-400.webp 400w,
+          image2/bodybuilding-800.webp 800w,
+          image2/bodybuilding-1200.webp 1200w"
+  sizes="(max-width: 600px) 100vw, 300px"
+  loading="lazy"
+> 
+<div class="equipment-item">
+      <img src="image2/dumbells.webp" alt="Dumbbells" loading="lazy">
+      <h3>Dumbbells</h3>
+      <p>Dumbbells are versatile strength training tools that can be used for a wide range of exercises targeting various muscle groups.</p>
+    </div>
+
+    <div class="equipment-item">
+      <img src="image2/resistancebands.webp" alt="Resistance Bands" loading="lazy">
+      <h3>Resistance Bands</h3>
+      <p>Resistance bands provide a convenient and portable way to add resistance to your workouts, helping to build strength and improve flexibility.</p>
+    </div>
+
+    <div class="equipment-item">
+      <img src="image2/exerciseball.webp" alt="Exercise Ball" loading="lazy">
+      <h3>Exercise Ball</h3>
+      <p>An exercise ball is a versatile tool that can be used for core exercises, stability training, and improving balance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tips">
+  <h2>Fitness Tips</h2>
+  <ul>
+    <li>Stay hydrated during workouts.</li>
+    <li>Warm up to prevent injuries.</li>
+    <li>Listen to your body and rest when needed.</li>
+    <li>Incorporate strength training exercises.</li>
+    <li>Focus on flexibility with stretching exercises.</li>
+    <li>Eat a balanced diet for fuel and nutrition.</li>
+    <li>Set realistic goals and track your progress.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2023 My Fitness Tips. All rights reserved.</p>
+</footer>
+
+<script src="minifiedjs/script.min.js" defer></script>
+<script src="minifiedjs/extra.min.js" defer></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log('SW Error:', err));
+}
+</script>
+</body>
+</html>

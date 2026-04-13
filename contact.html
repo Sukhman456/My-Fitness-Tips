@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" href="Lato-Regular.woff2" 
+      as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="minifiedcss/common.min.css">
+<link rel="stylesheet" href="minifiedcss/contact.min.css">
+  <style>
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar h2 {
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+/* HEADER + HERO */
+header {
+  background-color: #3b1919;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <h2>My Fitness Tips</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="workouts.html">Workouts</a></li>
+    <li><a href="equipment.html">Equipment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="tips">
+  <h2>Contact Us</h2>
+
+  <form onsubmit="showMessage(); return false;">
+    <input type="text" placeholder="Name"><br><br>
+    <input type="email" placeholder="Email"><br><br>
+    <textarea placeholder="Message"></textarea><br><br>
+    <button>Submit</button>
+  </form>
+
+</section>
+
+<footer>
+  <p>© 2023 My Fitness Tips</p>
+</footer>
+
+<script src="minifiedjs/script.min.js" defer></script>
+<script src="minifiedjs/extra.min.js" defer></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log('SW Error:', err));
+}
+</script>
+
+</body>
+</html>
