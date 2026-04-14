@@ -1,4 +1,4 @@
-const CACHE_NAME = "gym-site-v1";
+const CACHE_NAME = "gym-site";
 
 const urlsToCache = [
   // HTML files
